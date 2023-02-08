@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>HTML Overview</title>  
+        <style>
+            body {
+                font-family: Verdana, sans-serif;
+                background:   #d9cdcd;
+                color: red;
+                }
+            .header {
+                padding: 100px;
+                text-align: center;
+                background: url("Red\ and\ Black\ Dark\ Gamer\ Sports\ YouTube\ Banner.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 0%;
+                border: red;
+                border-style: groove;
+                color: #ffffff;
+                font-size: 30px;   
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                text-align: left;
+            }
+            table, td, th {
+                border: 1px solid white;
+                border-collapse: collapse;
+                border-style: double;
+                padding: 8px;
+                border-radius: 10px;
+            }
+            h1 {
+                border-top: 3px solid red;
+            }
+            
+        </style>
+	</head>
+    
+	<body>
+		
+        <div class="header">
+            
+            
+          </div>
+    <p>
+        <h1>Analysis Paragraph</h1>
+        For this project, we were given the task of implementing the Chocoholics Anonymous program. 
+        Our submitter (Madison Scott) and other team members have curated a report entitled (Report.html) containing vital information regarding the requirements of the project that were gleaned from the description of the project. 
+        Our task involves writing the ChocAn data processing software. 
+        Other organizations are responsible for the communications software, designing the ChocAn provider’s terminal, for the software needed by Acme Accounting Services, and for implementing the EFT component. For the sake of the project, we have assumed that operators and managers need to be operators and managers need to be validated and operators need to enter a provider number or member number to edit or delete their information in the records. After a careful examination of the project description, we carefully crafted a glossary that defined all of the key terms employed in our use case diagram, such as "Provider Directory". We then designed use case diagrams that displayed all of the use cases we derived from the program and the relationships between them. All of our members created their own, as shown in the picture below. We then refined our original diagrams and created a single use case diagram for our team, which is shown below.
+        We then collaborated to write detailed lists of the steps needed to achieve all of our use cases, including what would occur if errors were made by actors. 
+        Finally, we made sure to employ BitBucket in our collaboration and shared all of our files in the team repository, as shown below in our BitBucket statistics. 
+        <hr>
+        <img src= "Para.png" Width = "300" Height = "400"
+    </p>
+          
+    <p>
+        <h1>Header Information</h1>
+        <table style="width:80%">
+            <tr>
+                <th>Full Name
+                <th>CWID    
+                <th>Email
+                <th>Time Spent
+            </tr>
+            <tr>
+              <td>Madison Scott (Submitter)</td>
+              <td>11965996</td>
+              <td>mcscott5@crimson.ua.edu</td>
+              <td>5 hours</td>
+            </tr>
+            <tr>
+              <td>Justin Saye</td>
+              <td>12105387</td>
+              <td>jzsaye@crimson.ua.edu</td>
+              <td>5 hours</td>
+            </tr>
+            <tr>
+              <td>Ashwin Suryaram</td>
+              <td>12112540</td>
+              <td>agsuryaram@crimson.ua.edu</td>
+              <td>5 hours</td>
+            </tr>
+            <tr>
+                <td>Raheem Crayton</td>
+                <td>11957893</td>
+                <td>rkcrayton@crimson.ua.edu</td>
+                <td>5 hours</td>
+            </tr>
+            <tr>
+                <td>Anthony Minatel</td>
+                <td>12151111</td>
+                <td>ajminatel@crimson.ua.edu</td>
+                <td>5 hours</td>
+            </tr>
+            <tr>
+                <td>Andrew Hahn</td>
+                <td>12181343</td>
+                <td>ahahn1@crimson.ua.edu</td>
+                <td>5 hours</td>
+              </tr>
+          </table>
+    </p>
+        
+    <p>
+        <h1>Task Distribution</h1>
+        <ul>
+            <li>Madison Scott - Submitter, Use Case Diagram and Descriptions, Analysis Paragraph - 20%</li>
+            <li>Ashwin Suryaram - Use Case Diagram and Descriptions, Analysis Paragraph  - 16%</li>
+            <li>Justin Saye - Use Case Diagram and Descriptions, Analysis Paragraph - 16%</li>
+            <li>Andrew Hahn - Use Case Diagram and Descriptions, Analysis Paragraph - 16%</li>
+            <li>Raheem Crayton - Use Case Diagram and Descriptions, Analysis Paragraph - 16%</li>
+            <li>Anthony Minatel - Use Case Diagram and Descriptions, Analysis Paragraph - 16%</li>
+          </ul> 
+    </p>
+
+    <p>
+        <h1>BitBucket Statistics</h1>
+        <img src= "BitStats.png" Width = "1000" Height = "500"
+    </p>
+
+	<p>
+        <h1>Use Case Diagram</h1>
+		<img src = "P1UseCaseDiagram.png" Width = "800" Height = "600"
+	</p>
+	<p>
+        <h1>Use Case Descriptions</h1>
+        <br><strong>Use Case:</strong> Verify Manager
+        <br><strong>Context:</strong> An manager intends to verify themselves in order to access the system.
+        <br><strong>Actors:</strong> Manager
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            <li>The system prompts the manager to confirm their role.</li>
+            <li>The operator enters their manager password to validate their role.</li>
+            <li>The system displays a message confirming that the manager has been verified.</li>
+            <li>The use case ends.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            2a. The manager enters an invalid password.
+            <br>&nbsp;&nbsp;&nbsp;2a.1. The system displays a message stating that the password is incorrect.
+            <br>&nbsp;&nbsp;&nbsp;2a.2.The use case resumes at Step 1.
+        </ol>
+        <hr>
+        <br><strong>Use Case:</strong> Generate Reports
+        <br><strong>Context:</strong> The manager is to generate individual reports.
+        <br><strong>Actors:</strong> Manager
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            1. The manager selects Generate Reports from the terminal menu.</li>
+            <br>2. The terminal displays the menu for the manager who can select an option.</li>
+            <br>3. The system generates a report.</li>
+            <br>4. The system is exited.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            3a. The manager chooses to generate an EFT Data Report.
+            <br>3b. The manager chooses to generate a Summary Report.
+            <br>3c. The manager chooses to generate a Provider Report.
+            <br>3c. The manager chooses to generate a Member Report.
+        </ol>
+        <hr>
+        <br><strong>Use Case: </strong> Print EFT Data Report <strong>extends</strong> Generate Reports
+        <br><strong>Context:</strong> A report is generated and printed that details the electronic transfer fund information for an individual provider.
+        <br><strong>Actors:</strong> Manager
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            5.1. The manager selects "Generate EFT Data Report".</li>
+            <br>5.2. The system reads the week's file of services provided for the week.</li>
+            <br>5.3. A report consisting of EFT data that has been recorded up to that day is created.</li>
+            <br>5.4. The report is printed and sent to the manager.</li>
+            <br>&nbsp;&nbsp;&nbsp;5.4.1 A message confirming the report has been written and sent is displayed on the screen.</li>
+            <br>5.5. The system exits.</li>
+        </ol> 
+        <strong>Extensions: </strong>
+        <ol type="1">
+            <li>N/A</li>
+        </ol>
+        <hr>
+        <br><strong>Use Case:</strong> Print Summary Report <strong>extends</strong> Generate Reports
+        <br><strong>Context:</strong> A report is generated detailing the accounts payable by the manager. 
+        <br><strong>Actors:</strong> Manager
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            5.1. The manager selects "Generate Summary Report" from the terminal menu. </li>
+            <br>5.2. The system reads the week's file of services provided for the week.</li>
+            <br>5.3. A report is generated that prints every provider to be paid that week, the number of consultations each had, his or her total fee for that week, the total number of providers who provided services, the total number of consultations, and the overall fee total.</li>
+            <br>5.4. The report is sent to the manager.</li>
+            <br>&nbsp;&nbsp;&nbsp;5.5.1. A message is displayed to the terminal confirming the report was sent.
+            <br>5.6. The system exits.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            <li>N/A</li>
+        </ol>
+        <hr>
+        <br><strong>Use Case:</strong> Print Provider Report <strong>extends</strong> Generate Reports
+        <br><strong>Context:</strong> A report detailing a provider's identifiable information and a summary of their work for the week is generated. 
+        <br><strong>Actors:</strong> Manager
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            5.1. The manager selects "Generate Provider Report". </li>
+            <br>5.2. The system reads the week's file of services provided.</li>
+            <br>5.3. A system prompts the manager the enter a provider number.</li>
+            <br>5.4. The system validates the authentication.</li>
+            <br>&nbsp;&nbsp;&nbsp;5.4.1. The system communicates with the ChocAn Data Center to validate the provider number.
+            <br>5.5. A report is printed containing: individual provider name (25 characters), provider number (9 digits),
+                provider street address (25 characters), provider city (14 characters),
+                provider state (2 letters),
+                provider ZIP code (5 digits),
+                and for each service provided, 
+                date of service (MM–DD–YYYY),
+                date and time data were received by the computer (MM–DD–YYYY HH:MM:SS), member name (25 characters),
+                member number (9 digits),
+                service code (6 digits),
+                fee to be paid (up to $999.99),
+                the total number of consultations with members (3 digits), and the total fee for week (up to $99,999.99).</li>
+            <br>5.6. The report is sent to the manager.</li>
+            <br>5.7. The system exits.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            5.4a. An invalid provider number was entered.
+            <br>&nbsp;&nbsp;&nbsp;5.4a.1. The system informs the manager that the report could not be generated.
+            <br>&nbsp;&nbsp;&nbsp;5.4a.2. The use case continues at step 3.
+        </ol>
+        <hr>
+        <br><strong>Use Case:</strong> Print Member Report <strong>extends</strong> Generate Reports
+        <br><strong>Context:</strong> A report containing a member's personal information and the services provided to them is generated and sent to the manager. 
+        <br><strong>Actors:</strong> Manager
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            5.1. The manager selects "Print Member Report".</li>
+            <br>5.2. The system reads the week's file of services provided.</li>
+            <br>5.3. A system prompts the manager the enter a member number.</li>
+            <br>5.4. The system validates the authentication.</li>
+            <br>&nbsp;&nbsp;&nbsp;5.4.1. The system communicates with the ChocAn Data Center to validate the member number.
+            <br>5.5. A report is generated that contains member name (25 characters), member number (9 digits),
+                member street address (25 characters), member city (14 characters),
+                member state (2 letters),
+                member ZIP code (5 digits), and, for each service provided, 
+                date of service (MM–DD–YYYY), provider name (25 characters), and service name (20 characters).</li>
+            <br>5.6. The report is printed and sent to the manager.</li>
+            <br>5.7. The system exits.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            5.4a. An invalid member number was entered.
+            <br>&nbsp;&nbsp;&nbsp;5.4a.1. The system informs the manager that the report could not be generated.
+            <br>&nbsp;&nbsp;&nbsp;5.4a.2. The use case continues at step 3.
+        </ol>
+        <hr>
+        <br><strong>Use Case:</strong> Run Main Accounting Procedure
+        <br><strong>Context:</strong> A number of reports are printed and sent to their respective entities on at midnight on a Friday.
+        <br><strong>Actors:</strong> Timer
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            <li>At midnight on Friday, the main accounting procedure is activated by a timer.</li>
+            <li>The procedure reads the week's file of services provided from the ChocAn Data Center.</li>
+            <li>A report containing a member's personally identifiable information and a list of the services they were provided is <u>generated</u> for all members who consulted ChocAn for that week.</li>
+            <li>Each report is sent to its respective member as an email attachment.</li>
+            <li>A report containing a provider's personally identifiable information, a list of services he or she provided to ChocAn members, and details regarding their compensation is <u>generated</u> for all providers who have billed Choc during that week.</li>
+            <li>Each report is sent to its respective provider as san email attachment.</li>
+            <li>A record consisting of electronic transfer funds data is <u>generated</u> and written to a disk.</li>
+            <li>A report summarizing the accounts payable for the week is <u>generated</u>.</li>
+            <li>The summary report is sent to the manager as an email attachment.</li>
+            <li>The accounting procedure ends and the system exits.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            <li>N/A</li>
+        </ol>
+        <hr>
+        <br><strong>Use Case:</strong> Update Member Records
+        <br><strong>Context:</strong> An operator intends to make changes to a member's records through software at the ChocAn Data Center.
+        <br><strong>Actors:</strong> Operator
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            <li>The system displays a menu for the operator who can select an option.</li>
+            <li>The operator updates member records.</li>
+            <li>The system displays a message confirming that the changes were made.</li>
+            <li>The system exits.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            <br>2a.The operator edits the records of an existing member.
+            <br>2b.The operator adds a member.
+            <br>2c.The operator deletes a member.
+            
+        </ol>
+        <hr>
+        
+        <br><strong>Use Case:</strong> Verify Operator
+        <br><strong>Context:</strong> An operator intends to verify themselves in order to access the system.
+        <br><strong>Actors:</strong> Operator
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            <li>The system prompts the operator to confirm their role.</li>
+            <li>The operator enters their operator password to validate their role.</li>
+            <li>The system displays a message confirming that the operator has been verified.</li>
+            <li>The use case ends.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            2a. The operator enters an invalid password.
+            <br>&nbsp;&nbsp;&nbsp;2a.1. The system displays a message stating that the password is incorrect.
+            <br>&nbsp;&nbsp;&nbsp;2a.2.The use case resumes at Step 1.
+        </ol>
+        <hr>
+        
+    
+        <br><strong>Use Case:</strong> Edit Member <strong>extends</strong> Update Member Records
+        <br><strong>Context:</strong> An operator intends to alter a current member's information.
+        <br><strong>Actors:</strong> Operator 
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            4.1. The operator selects "Edit Member".</li>
+            <br>4.2. The system prompts the operator to enter a current member's member number.</li>
+            <br>4.3. The operator enters the member number.</li>
+            <br>4.4. The system communicates the the ChocAn Data Center and verifies the member number.</li>
+            <br>4.5. The system displays options for editing the member record.</li>
+            <br>4.6. The operator edits the member record.</li>
+            <br>4.7. The system displays a message displaying and confirming the changes made.</li>
+            <br>4.8. The system exits.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            4.4a. An invalid member number was entered and is unable to be verified.
+            <br>&nbsp;&nbsp;&nbsp;4.4a.1. The terminal displays a message informing the operator that the member number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;does not exist.
+            <br>&nbsp;&nbsp;&nbsp;4.4a.2. The use case continues at step 2. 
+            <br>4.6a. An invalid edit was made to the member record.
+            <br>&nbsp;&nbsp;&nbsp;4.6a.1. The terminal displays a message informing the operator that the edit could not be made.
+            <br>&nbsp;&nbsp;&nbsp;4.6a.2. The use case continues at Step 4.5.
+        </ol>
+        <hr>
+        <br><strong>Use Case:</strong> Add Member <strong>extends</strong> Update Member Records
+        <br><strong>Context:</strong> An operator intends to add a member to the member records.
+        <br><strong>Actors:</strong> Operator
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            4.1. The operator selects "Add Member" from the terminal menu.</li>
+            <br>4.2. When prompted by the system, the operator enters the new member's information and confirms it.
+            <br>4.3. The system communicates the addition to the ChocAn Data Center.</li>
+            <br>&nbsp;&nbsp;&nbsp;4.3.1. The system received confirmation from the data center.
+            <br>&nbsp;&nbsp;&nbsp;4.3.2. The terminal displays a message confirming the addition.</li>
+            <br>4.5. The system exits.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            4.3a. The operator entered invalid information. 
+            <br>&nbsp;&nbsp;&nbsp;4.3a.1. The terminal displays a message informing the operator that the member addition was rejected.
+            <br>&nbsp;&nbsp;&nbsp;4.3a.2. The use case continues at step 4.2. 
+        </ol>
+        <hr>
+        <br><strong>Use Case:</strong> Delete Member <strong>extends</strong> Update Member Records
+        <br><strong>Context:</strong> An operator intends to delete a member from the member records.
+        <br><strong>Actors:</strong> Operator
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            4.1. The operator selects "Delete Member" from the terminal menu.</li>
+            <br>4.2. The operator enters the member number of the member they want to delete and confirms it.</li>
+            <br>4.3. The system communicates the deletion to the ChocAn Data Center.
+            <br>&nbsp;&nbsp;&nbsp;4.3.1. The system receives confirmation from the data center.
+            <br>&nbsp;&nbsp;&nbsp;4.3.2. The terminal displays a message confirming the deletion.</li>
+            <br>4.5. The system exits.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            4.2a. The operator entered a nonexistent member number.
+            <br>&nbsp;&nbsp;&nbsp;4.2a.1. The terminal displays a message informing the operator that the member number does not exist.
+            <br>&nbsp;&nbsp;&nbsp;4.2a.2. The use case continues at step 4.2. 
+        
+        </ol>
+        <hr>
+        <br><strong>Use Case:</strong> Update Provider Records
+        <br><strong>Context:</strong> An operator intends to make changes to a provider's records through software at the ChocAn Data Center.
+        <br><strong>Actors:</strong> Operator
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            <li>The system displays a menu for the operator who can select an option.</li>
+            <li>The operator updates provider records.</li>
+            <li>The system displays a message confirming that the changes were made.</li>
+            <li>The system exits.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            <br>2a.The operator edits the records of an existing provider.
+            <br>2b.The operator adds a provider.
+            <br>2c.The operator deletes a provider.
+            
+        </ol>
+
+        <hr>
+        <br><strong>Use Case:</strong> Edit Provider <strong>extends</strong> Update Provider Records
+        <br><strong>Context:</strong> An operator intends to alter a current provider's information.
+        <br><strong>Actors:</strong> Operator 
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            4.1. The operator selects "Edit Provider".</li>
+            <br>4.2. The system prompts the operator to enter a current provider's member number.</li>
+            <br>4.3. The operator enters the provider number.</li>
+            <br>4.4. The system communicates the the ChocAn Data Center and verifies the provider number.</li>
+            <br>4.5. The system displays options for editing the provider record.</li>
+            <br>4.6. The operator edits the provider record.</li>
+            <br>4.7. The system displays a message displaying and confirming the changes made.</li>
+            <br>4.8. The system exits.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            4.4a. An invalid provider number was entered and is unable to be verified.
+            <br>&nbsp;&nbsp;&nbsp;4.4a.1. The terminal displays a message informing the operator that the provider number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;does not exist.
+            <br>&nbsp;&nbsp;&nbsp;4.4a.2. The use case continues at step 2. 
+            <br>4.6a. An invalid edit was made to the provider record.
+            <br>&nbsp;&nbsp;&nbsp;4.6a.1. The terminal displays a message informing the operator that the edit could not be made.
+            <br>&nbsp;&nbsp;&nbsp;4.6a.2. The use case continues at Step 4.5.
+        </ol>
+        <hr>
+        <br><strong>Use Case:</strong> Add Provider <strong>extends</strong> Update Provider Records
+        <br><strong>Context:</strong> An operator intends to add a member to the provider records.
+        <br><strong>Actors:</strong> Operator
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            4.1. The operator selects "Add Provider" from the terminal menu.</li>
+            <br>4.2. When prompted by the system, the operator enters the new provider's information and confirms it.
+            <br>4.3. The system communicates the addition to the ChocAn Data Center.</li>
+            <br>&nbsp;&nbsp;&nbsp;4.3.1. The system received confirmation from the data center.
+            <br>&nbsp;&nbsp;&nbsp;4.3.2. The terminal displays a message confirming the addition.</li>
+            <br>4.5. The system exits.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            4.3a. The operator entered invalid information. 
+            <br>&nbsp;&nbsp;&nbsp;4.3a.1. The terminal displays a message informing the operator that the member addition was rejected.
+            <br>&nbsp;&nbsp;&nbsp;4.3a.2. The use case continues at step 4.2. 
+        </ol>
+        <hr>
+        <br><strong>Use Case:</strong> Delete Provider <strong>extends</strong> Update Provider Records
+        <br><strong>Context:</strong> An operator intends to delete a provider from the provider records.
+        <br><strong>Actors:</strong> Operator
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            4.1. The operator selects "Delete Provider" from the terminal menu.</li>
+            <br>4.2. The operator enters the provider number of the member they want to delete and confirms it.</li>
+            <br>4.3. The system communicates the deletion to the ChocAn Data Center.
+            <br>&nbsp;&nbsp;&nbsp;4.3.1. The system receives confirmation from the data center.
+            <br>&nbsp;&nbsp;&nbsp;4.3.2. The terminal displays a message confirming the deletion.</li>
+            <br>4.5. The system exits.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            4.2a. The operator entered a nonexistent provider number.
+            <br>&nbsp;&nbsp;&nbsp;4.2a.1. The terminal displays a message informing the operator that the provider number does not exist.
+            <br>&nbsp;&nbsp;&nbsp;4.2a.2. The use case continues at step 4.2. 
+        
+        </ol>
+        <hr>
+        <br><strong>Use Case:</strong> Verify Provider
+        <br><strong>Context:</strong> An provider intends to verify themselves in order to access the system.
+        <br><strong>Actors:</strong> Provider
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            <li>The system prompts the provider to confirm their role.</li>
+            <li>The operator enters their provider password to validate their role.</li>
+            <li>The system displays a message confirming that the provider has been verified.</li>
+            <li>The use case ends.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            2a. The provider enters an invalid password.
+            <br>&nbsp;&nbsp;&nbsp;2a.1. The system displays a message stating that the password is incorrect.
+            <br>&nbsp;&nbsp;&nbsp;2a.2.The use case resumes at Step 1.
+        </ol>
+        <hr>
+        <br><strong>Use Case:</strong> Request Provider Directory
+        <br><strong>Context:</strong> The provider requests and is sent a Provider Directory as an email attachment.
+        <br><strong>Actors:</strong> Provider
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            <li>The provider selects "Request Provider Directory" from the terminal menu.</li>
+            <li>The system generates and prints a file containing an alphabetically ordered list of service names and their corresponding service codes and fees.</li>
+            <li>The Provider Directory is sent to the provider as an email attachment.</li>
+            <li>The use case ends.</li>
+        </ol> 
+        <strong>Extensions:</strong> 
+        <ol type="1">
+            <li>N/A</li>
+        </ol>
+        <hr>
+        <br><strong>Use Case:</strong> Member Validation
+        <br><strong>Context:</strong> A provider validates a member receiving a service.
+        <br><strong>Actors:</strong> Provider
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            <li>The provider takes the member’s card and slides it though the terminal’s card reader. </li>
+            <li>The card number is verified. </li>
+            2.1. The terminal dials the ChocAn Data Center.
+            <br>2.2. The data center’s computer verifies the member number. 
+            <br>2.3. The word “Validated” appears on the terminal. 
+            <li>The system exits.</li>
+        </ol> 
+        
+        <strong>Extensions:</strong>
+        <ol type="1">
+            2a. The card number is invalid.
+            <br>&nbsp;&nbsp;&nbsp;2a.1. The ChocAn Data Center could not verify the card number. 
+            <br>&nbsp;&nbsp;&nbsp;2a.2. “Invalid number” displays on the terminal. 
+            <br>&nbsp;&nbsp;&nbsp;2a.3. The use case resumes at Step 3.
+            <br>2b.  The member is suspended. 
+            <br>&nbsp;&nbsp;&nbsp;2b.1. The ChocAn Data Center flagged the member number as having a suspended account. 
+            <br>&nbsp;&nbsp;&nbsp;2b.2. “Member Suspended” displays on the terminal. 
+            <br>&nbsp;&nbsp;&nbsp;2b.3. The use case resumes at Step 3.
+        </ol>
+        <hr>
+        <br><strong>Use Case:</strong> Bill ChocAn for Services
+        <br><strong>Context:</strong> A provider carries out a service for a member and bills them the correct amount.
+        <br><strong>Actors:</strong> Provider
+        <br><strong>Main Success Scenario:</strong>
+        <ol type="1">
+            <li>After a service is provided to a member, the provider <u>validates the member</u>.</li>
+            <li>The provider enters the date of the provided service to the terminal.</li>
+            <li>The provider <u>requests the Provider Directory</u> and looks up the 6-digit code corresponding to the service. </li>
+            <li>The provider keys the service code into the terminal. </li>
+            4.1. The service corresponding to the service code is displayed on the screen.
+            <br>4.2. The provider is prompted to verify that the correct service is displayed.
+            <li>The provider optionally enters comments on the service. </li>
+            <li>Information concerning the service provided is written to disk. </li>
+            <li>The terminal displays the fee to be paid.</li>
+            <li>The provider verifies the correct billing information and enters it a form.</li>
+        </ol> 
+        <strong>Extensions:</strong>
+        <ol type="1">
+            4a. The service code is invalid.
+            <br>4a.1. The software finds no match for the code given by the provider. 
+            <br>4a.2. The terminal displays an error message. 
+            <br>4a.3. The use case continues at step 3.
+            
+        </ol>
+        <hr>
+        
+    </p>
+
+	<p>
+    
+	<h1><strong>Glossary</strong></h1>
+	</p>
+	<p>
+		<table style="width:80%">
+            <tr>
+                <th>Term
+                <th>Definition    
+                
+            </tr>
+            <tr>
+                <td>Electronic Funds Transfer (EFT) Data Report</td>
+                <td>A report that details the compensation to be paid to each provider's bank account.</td>
+            </tr>
+            <tr>
+                <td>Manager</td>
+                <td>An individual who is able to receive a number of individual reports at their request and is in charge of managing accounts payable. </td>
+            </tr>
+            <tr>
+                <td>Member</td>
+                <td>A person who is receiving services from ChocAn in exchange for a monthly fee. </td>
+            </tr>
+            <tr>
+                <td>Member Records</td>
+                <td>A record containing the information off all members that can be updated by operators.</td>
+            </tr>
+            <tr>
+                <td>Member Report</td>
+                <td>A report made for the member requesting ChocAn services that details information that pertains to them, such as their provider name and service name.</td>
+            </tr>
+            <tr>
+                <td>Operator</td>
+                <td>A person who is able to modify the records of both providers and members. </td>
+            </tr>
+            <tr>
+                <td>Provider</td>
+                <td>A healthcare professional who provides services to ChocAn members. </td>
+            </tr>
+            <tr>
+                <td>Provider Directory</td>
+                <td>An alphabetically ordered list of service names and corresponding service codes and fees.</td>
+            </tr>
+            <tr>
+                <td>Provider Records</td>
+                <td>A record containing the information of all providers that can be updated by operators.</td>
+            </tr>
+            <tr>
+                <td>Provider Report</td>
+                <td>A report made for providers detailing the services they provided and their personal information, I.e. name, provider number, etc. </td>
+            </tr>
+            <tr>
+                <td>Summary Report</td>
+                <td>A report detailing the accounts payable. </td>
+            </tr>
+            <tr>
+                <td>Timer</td>
+                <td>A running clock system that activates the weekly accounting procedure.</td>
+            </tr>
+            
+        </table>
+	</p>
+
+	</body>
+
+</html>

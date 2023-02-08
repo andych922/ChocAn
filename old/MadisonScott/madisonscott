@@ -1,0 +1,29 @@
+<<<<<<< HEAD
+=======
+Use Case Descriptions
+
+Use Case: Produce Summary Report
+Context: A summary report is created by the ChocAn software detailing the accounts payable for the week and is provided to the manager. 
+Actors: Manager
+Main Sucess Scenario: 
+1. 
+
+Use Case: Produce Provider Report
+Context:
+Actors:
+Main Sucess Scenario: 
+
+Use Case: Member Validation
+Context: A provider verifies a member after they receive services from ChocAn. 
+Actors: Provider
+Main Sucess Scenario: 
+1. 
+
+Use Case: Bill ChocAn for Services
+Context:
+Actors:
+Main Sucess Scenario: 
+
+
+>>>>>>> branch 'master' of https://bitbucket.org/tklocklear/Fall2022Team20.git
+
