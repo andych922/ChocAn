@@ -1,0 +1,131 @@
+------------Member Reports------------
+Report: John Do_12-07-2022
+Name: John Do
+Number: 123456789
+Address: 24 Road Rd.
+City: Joicey
+State: NJ
+Zip: 29394
+Services Received:
+
+	Date: 12-11-2021
+	Provider: Kim Smith
+	Service: Group Therapy
+
+	Date: 01-02-2022
+	Provider: Kim Smith
+	Service: Private Therapy
+
+	Date: 05-15-2022
+	Provider: 
+	Service: Private Therapy
+
+	Date: 10-28-2022
+	Provider: 
+	Service: Dietitian Session
+
+	Date: 11-04-2022
+	Provider: 
+	Service: Hypnosis Session
+
+
+Report: Melissa_12-07-2022
+Name: Melissa
+Number: 345434543
+Address: Washington Ave.
+City: PN
+State: MN
+Zip: 23432
+Services Received:
+
+
+------------Provider Reports------------
+Report: Kim Smith_12-07-2022
+Name: Kim Smith
+Number: 135798642
+Address: 10 Avenue Way
+City: Greensville
+State: NC
+Zip: 45322
+Services Provided:
+
+	Date: 12-11-2021
+	Time Received: 12-02-2022 23:19:21
+	Member Name: John Do
+	Member Number: 123456789
+	Service Code: 222222
+	Fee: $20.00
+
+	Date: 01-02-2022
+	Time Received: 12-02-2022 23:58:06
+	Member Name: John Do
+	Member Number: 123456789
+	Service Code: 555555
+	Fee: $60.00
+
+Total Consultations: 2
+Total Fees: $80.00
+
+
+Report: Matt Damon_12-07-2022
+Name: Matt Damon
+Number: 456456456
+Address: Westbrook Lane
+City: Metropolis
+State: PA
+Zip: 88888
+Services Provided:
+
+Total Consultations: 0
+Total Fees: $0.00
+
+
+Report: Penelope Cruz_12-07-2022
+Name: Penelope Cruz
+Number: 222333444
+Address: Canta Ave.
+City: Memphis
+State: TN
+Zip: 88888
+Services Provided:
+
+Total Consultations: 0
+Total Fees: $0.00
+
+
+Report: Joe Macson_12-07-2022
+Name: Joe Macson
+Number: 999999999
+Address: 123 Stord Rd.
+City: Townsburg
+State: AL
+Zip: 88888
+Services Provided:
+
+Total Consultations: 0
+Total Fees: $0.00
+
+
+------------Summary Report------------
+Provider: Kim Smith
+Consultations: 2
+Fees: $80.00
+
+Provider: 
+Consultations: 3
+Fees: $175.00
+
+Total Providers: 2
+Total Consultations: 5
+Total Fees: $255.00
+
+
+------------EFT Report------------
+Name: Kim Smith
+Number: 135798642
+Fees: $80.00
+
+Name: 
+Number: 987654321
+Fees: $175.00
+

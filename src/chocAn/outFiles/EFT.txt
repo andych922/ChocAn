@@ -1,0 +1,12 @@
+-----EFT Data-----
+Name: Kim Smith
+Number: 135798642
+Fees: $80.00
+
+Name: 
+Number: 987654321
+Fees: $175.00
+
+Name: Mary Smith
+Number: 888777666
+Fees: $40.

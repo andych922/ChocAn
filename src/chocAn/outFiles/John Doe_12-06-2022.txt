@@ -1,0 +1,12 @@
+-----Member Report-----
+Name: John Doe
+Number: 666666666
+Address: 123 Road
+City: Tuscaloosa
+State: AL
+Zip: 35405
+Services Received:
+
+	Date: 12-05-2022
+	Provider: Mary Smith
+	Service: Dietitian Sessi

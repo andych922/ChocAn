@@ -1,0 +1,18 @@
+-----Provider Report-----
+Name: Mary Smith
+Number: 888777666
+Address: 123 Story Rd.
+City: Minneapolis
+State: MN
+Zip: 44444
+Services Provided:
+
+	Date: 12-05-2022
+	Time Received: 12-06-2022 22:40:48
+	Member Name: John Doe
+	Member Number: 666666666
+	Service Code: 000000
+	Fee: $40.00
+
+Total Consultations: 1
+Total Fees: $40.00

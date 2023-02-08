@@ -1,0 +1,11 @@
+-----Provider Report-----
+Name: Joe Macson
+Number: 999999999
+Address: 123 Stord Rd.
+City: Townsburg
+State: AL
+Zip: 88888
+Services Provided:
+
+Total Consultations: 0
+Total Fees: $0.00

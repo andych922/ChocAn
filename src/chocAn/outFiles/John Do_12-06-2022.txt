@@ -1,0 +1,28 @@
+-----Member Report-----
+Name: John Do
+Number: 123456789
+Address: 24 Road Rd.
+City: Joicey
+State: NJ
+Zip: 29394
+Services Received:
+
+	Date: 12-11-2021
+	Provider: Kim Smith
+	Service: Group Therapy
+
+	Date: 01-02-2022
+	Provider: Kim Smith
+	Service: Private Therapy
+
+	Date: 05-15-2022
+	Provider: 
+	Service: Private Therapy
+
+	Date: 10-28-2022
+	Provider: 
+	Service: Dietitian Session
+
+	Date: 11-04-2022
+	Provider: 
+	Service: Hypnosis Sessi

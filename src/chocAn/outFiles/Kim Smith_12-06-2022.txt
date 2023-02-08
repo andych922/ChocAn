@@ -1,0 +1,25 @@
+-----Provider Report-----
+Name: Kim Smith
+Number: 135798642
+Address: 10 Avenue Way
+City: Greensville
+State: NC
+Zip: 45322
+Services Provided:
+
+	Date: 12-11-2021
+	Time Received: 12-02-2022 23:19:21
+	Member Name: John Do
+	Member Number: 123456789
+	Service Code: 222222
+	Fee: $20.00
+
+	Date: 01-02-2022
+	Time Received: 12-02-2022 23:58:06
+	Member Name: John Do
+	Member Number: 123456789
+	Service Code: 555555
+	Fee: $60.00
+
+Total Consultations: 2
+Total Fees: $80.00

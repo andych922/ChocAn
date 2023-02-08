@@ -1,0 +1,8 @@
+         Service         |   Code   |    Fee   
+-------------------------|----------|----------
+Dietitian Session        |000000    |$40.00     
+Group Exercise           |111111    |$15.00     
+Group Therapy            |222222    |$20.00     
+Hypnosis Session         |333333    |$75.00     
+Personal Training        |444444    |$45.00     
+Private Therapy          |555555    |$60.00    

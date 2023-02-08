@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+	<project basedir="." default="build" name="Fall2022Team20">
+    <property environment="env"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="17"/>
+    <property name="source" value="17"/>
+    <path id="JUnit 5.libraryclasspath">
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.api_5.8.1.v20211018-1956.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.engine_5.8.1.v20211018-1956.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.migrationsupport_5.8.1.v20211018-1956.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.jupiter.params_5.8.1.v20211018-1956.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.commons_1.8.1.v20211018-1956.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.engine_1.8.1.v20211018-1956.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.launcher_1.8.1.v20211018-1956.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.runner_1.8.1.v20211018-1956.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.suite.api_1.8.1.v20211018-1956.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.suite.engine_1.8.1.v20211028-1957.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.platform.suite.commons_1.8.1.v20211018-1956.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit.vintage.engine_5.8.1.v20211018-1956.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.opentest4j_1.2.0.v20211018-1956.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.apiguardian_1.1.2.v20211018-1956.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.13.2.v20211018-1956.jar"/>
+        <pathelement location="../../../../Applications/Eclipse.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+    </path>
+    <path id="Fall2022Team20.classpath">
+        <pathelement location="bin"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.IsProviderNameTest.classpath">
+        <path refid="Fall2022Team20.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.MemberUpdaterTest.classpath">
+        <path refid="Fall2022Team20.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.Terminal.classpath">
+        <path refid="Fall2022Team20.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.JustinSayeUnitTests.classpath">
+        <path refid="Fall2022Team20.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.AddMemberTest.classpath">
+        <path refid="Fall2022Team20.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.MadisonScottTest.classpath">
+        <path refid="Fall2022Team20.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.DeleteMemberTest.deleteSetUp.classpath">
+        <path refid="Fall2022Team20.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.DeleteMemberTest.classpath">
+        <path refid="Fall2022Team20.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.MemberRecordsTest.classpath">
+        <path refid="Fall2022Team20.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="Fall2022Team20.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="IsProviderNameTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="chocAn.test.IsProviderNameTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.IsProviderNameTest.classpath"/>
+        </junit>
+    </target>
+    <target name="MemberUpdaterTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="chocAn.test.MemberUpdaterTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.MemberUpdaterTest.classpath"/>
+        </junit>
+    </target>
+    <target name="Terminal">
+        <java classname="chocAn.Terminal" failonerror="true" fork="yes">
+            <classpath refid="run.Terminal.classpath"/>
+        </java>
+    </target>
+    <target name="JustinSayeUnitTests">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="chocAn.test.JustinSayeUnitTests" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.JustinSayeUnitTests.classpath"/>
+        </junit>
+    </target>
+    <target name="AddMemberTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="chocAn.test.AddMemberTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.AddMemberTest.classpath"/>
+        </junit>
+    </target>
+    <target name="MadisonScottTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="chocAn.test.MadisonScottTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.MadisonScottTest.classpath"/>
+        </junit>
+    </target>
+    <target name="DeleteMemberTest.deleteSetUp">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="chocAn.test.DeleteMemberTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.DeleteMemberTest.deleteSetUp.classpath"/>
+        </junit>
+    </target>
+    <target name="DeleteMemberTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="chocAn.test.DeleteMemberTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.DeleteMemberTest.classpath"/>
+        </junit>
+    </target>
+    <target name="MemberRecordsTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="chocAn.test.MemberRecordsTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.MemberRecordsTest.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+    <target name="createJar">
+    	<jar destfile="Chocan.jar">
+    		<fileset dir = "release/" includes="**/*.class, src/**"></fileset>
+    		<manifest>
+    			<attribute name="Main-Class" value="chocAn.Terminal"/>
+    		</manifest>
+    	</jar>
+    </target>
+</project>
